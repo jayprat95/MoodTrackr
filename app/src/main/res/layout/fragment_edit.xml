@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jprathip.ssui2016.finalproject.EditFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/mood_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment" />
+
+        <SeekBar
+            android:id="@+id/mood_bar"
+            android:layout_below="@id/mood_title"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="40dp"
+            android:progress="2"
+            android:max="5"
+            android:secondaryProgress="20" />
+
+
+        <TextView
+            android:id="@+id/focus_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mood_bar"
+            android:text="@string/focus_question" />
+
+        <SeekBar
+            android:id="@+id/focus_bar"
+            android:layout_below="@id/focus_title"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="40dp"
+            android:progress="2"
+            android:max="5"
+            android:secondaryProgress="20" />
+
+        <TextView
+            android:id="@+id/activity_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/focus_bar"
+            android:text="@string/activity_question" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_marginTop="5dp"
+            android:id="@+id/activity_spinner"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/activity_title"
+            android:layout_height="wrap_content"></android.support.v7.widget.AppCompatSpinner>
+
+        <TextView
+            android:id="@+id/alone_title"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_spinner"
+            android:text="@string/alone_question" />
+
+        <Switch
+            android:id="@+id/alone_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/alone_title"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

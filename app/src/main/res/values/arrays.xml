@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="titles">
+        <item>History</item>
+        <item>Graphs</item>
+    </string-array>
+
+    <string-array name="activities_array">
+        <item>Exercising</item>
+        <item>Socializing</item>
+        <item>Eating</item>
+        <item>Doing Nothing</item>
+        <item>Cleaning</item>
+        <item>Listening to Music</item>
+        <item>Studying</item>
+    </string-array>
+
+
+</resources>

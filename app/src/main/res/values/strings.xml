@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Final Project</string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+    <string name="hello_blank_fragment">How are you feeling?</string>
+    <string name="focus_question">How focused are you?</string>
+    <string name="alone_question">Are you alone?</string>
+    <string name="activity_question">What are you doing?</string>
+    <string name="location_question">Where are you?</string>
+    <string name="add_key">add</string>
+
+
+</resources>
