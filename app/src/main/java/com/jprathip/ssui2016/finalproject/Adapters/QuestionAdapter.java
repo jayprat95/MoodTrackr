@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.jprathip.ssui2016.finalproject.Adapters.RealmRecyclerViewAdapter;
 import com.jprathip.ssui2016.finalproject.Database.Question;
@@ -55,6 +56,16 @@ public class QuestionAdapter extends RealmRecyclerViewAdapter<Question> {
         holder.locationTitle.setText(question.getPersonInContact());
 
 
+        holder.card.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Toast.makeText(context, "this is my Toast message!!! =)",
+                        Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
+
+
 
 
     }
@@ -67,6 +78,10 @@ public class QuestionAdapter extends RealmRecyclerViewAdapter<Question> {
         }
         return 0;
     }
+
+
+
+
 
     public static class CardViewHolder extends RecyclerView.ViewHolder {
 
